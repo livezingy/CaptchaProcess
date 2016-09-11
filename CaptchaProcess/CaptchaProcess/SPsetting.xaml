@@ -1,0 +1,12 @@
+﻿<Window x:Class="CaptchaProcess.SPsetting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SPsetting" Height="300" Width="300">
+    <Grid>
+        <Label x:Name="Sauvola_Width" Content="Sauvola  Width" HorizontalAlignment="Left" Margin="22,65,0,0" VerticalAlignment="Top"/>
+        <Label Content="Sauvola Factor" HorizontalAlignment="Left" Margin="24,116,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="widthValue" HorizontalAlignment="Left" Height="23" Margin="139,66,0,0" TextWrapping="Wrap" Text="40" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="factorValue" HorizontalAlignment="Left" Height="23" Margin="138,117,0,0" TextWrapping="Wrap" Text="0.3" VerticalAlignment="Top" Width="120"/>
+        <Button Content="OK" HorizontalAlignment="Left" Margin="113,178,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+    </Grid>
+</Window>
