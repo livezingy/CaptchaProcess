@@ -124,6 +124,19 @@ namespace CaptchaSegment
 
             FixBrokenCharacter();
 
+            Point rdPoint = new Point(0,0);
+
+            Point ldPoint = new Point(ImageHeight - 2, ImageWidth - 2);
+
+            VerPro midArr = Preprocess.Preprocess.VerticalProjection(rdPoint, ldPoint, 0, BinaryArray);
+
+            int midCount = midArr.vRange.Count;
+
+            if (midCount >=4)
+            {
+                return BinaryArray;
+            }
+
             StrokeWid = Preprocess.Preprocess.GetStrokeWid(ImageHeight, ImageWidth, BinaryArray);
 
             ImgBoundary = Preprocess.Preprocess.getImgBoundary(ImageHeight, ImageWidth, BinaryArray);

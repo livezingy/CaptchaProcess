@@ -19,11 +19,12 @@ namespace CaptchaProcess
     /// </summary>
     public partial class SPsetting : Window
     {
+        //子窗口初始化
         public SPsetting()
         {
             InitializeComponent();
         }
-
+        //参数设置完成后将设置值传递给Sauvola函数用变量
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             MainWindow.m_SauvolaWidth = int.Parse(widthValue.Text);

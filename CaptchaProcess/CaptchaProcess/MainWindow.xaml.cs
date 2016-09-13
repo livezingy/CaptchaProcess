@@ -40,7 +40,7 @@ namespace CaptchaProcess
     {
         private static string m_srcImagePath = "";
 
-        public static int m_SauvolaWidth = 200;
+        public static int m_SauvolaWidth = 100;
 
         public static double m_SauvolaFactor = 0.3;
 
@@ -67,7 +67,15 @@ namespace CaptchaProcess
             if (result == true)
             {
                 m_srcImagePath = openFileDialog.FileName;
-                SRC_IMAGE.Source = new BitmapImage(new Uri(m_srcImagePath));
+                BitmapImage newImg = new BitmapImage(new Uri(m_srcImagePath));
+                if ((newImg.Width > 134) || (newImg.Height > 49))
+                {
+                    MessageBox.Show("The image is too large!");  
+                }
+                else
+                {
+                    SRC_IMAGE.Source = newImg;
+                }
             }
             else
             {
