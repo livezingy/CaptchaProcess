@@ -75,6 +75,10 @@ namespace CaptchaProcess
                 else
                 {
                     SRC_IMAGE.Source = newImg;
+
+                    IP_Com1_SelectionChanged_1(null, null);
+
+                    IP_Com2_SelectionChanged_1(null, null);
                 }
             }
             else
