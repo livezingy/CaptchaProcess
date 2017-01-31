@@ -68,7 +68,7 @@ namespace CaptchaProcess
             {
                 m_srcImagePath = openFileDialog.FileName;
                 BitmapImage newImg = new BitmapImage(new Uri(m_srcImagePath));
-                if ((newImg.Width > 134) || (newImg.Height > 49))
+                if ((newImg.Width > 139) || (newImg.Height > 49))
                 {
                     MessageBox.Show("The image is too large!");  
                 }
