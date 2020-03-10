@@ -6,6 +6,6 @@ This is the WPF interface of merged-characters-segmentation. You could choose th
 * Iteration binarization
 * Zhang-Suen skeletonization
 
-![The interface of CaptchaProcess](http://livezingy.qiniudn.com/201609/CSharp/Captcha%20Process.png)
+![The interface of CaptchaProcess](http://livezingy.com/uploads/201609/CSharp/Captcha%20Process.png)
 
 
